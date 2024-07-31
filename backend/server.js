@@ -21,7 +21,8 @@ app.use(cookieParser())
 app.use(urlencoded({extended:true}));
 app.use(json());
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://netflix-clone-sooty-pi.vercel.app',
+    method: ["POST", "GET"],
     credentials: true,
 }
 app.use(cors(corsOptions))
