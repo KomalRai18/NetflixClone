@@ -27,7 +27,7 @@ function Login() {
       if(isLogin){
         const user = {email, password};
         try {
-          const res = await axios.post(`${API_End_Point}/login`, user, {
+          const res = await axios.post(`https://backend-two-sooty.vercel.app/login`, user, {
             headers:{
               "Content-Type":"application/json"
             },
@@ -48,7 +48,7 @@ function Login() {
       } else{
         const user = {fullname, email, password}
         try {
-          const res = await axios.post(`${API_End_Point}/signup`, user, {
+          const res = await axios.post(`https://backend-two-sooty.vercel.app/signup`, user, {
             headers:{
               "Content-Type":"application/json",
             },
