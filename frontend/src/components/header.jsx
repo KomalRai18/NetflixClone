@@ -15,7 +15,7 @@ function Header() {
   const toggleSearch = useSelector((store)=>store.movie.toggle)
   const logoutHandler = async()=>{
     try {
-      const res = await axios.get(`${API_End_Point}/logout`)
+      const res = await axios.get(`https://backend-two-sooty.vercel.app/logout`)
       if(res.data.success){
         toast.success(res.data.msg)
         }
